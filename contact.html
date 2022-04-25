@@ -1,0 +1,95 @@
+<!-------f----------
+
+    Project 3
+    Name: Gabby Tan
+    Date: 2022-04-24
+    Description: A contact page for Project 3.
+
+------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ROBO GOGO | Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="js/formValidate.js"></script>
+</head>
+<body>
+	<header>
+        <div id="mainheader">
+            <h2>ROBO<br>GOGO</h2>
+            <h5>Because Building Real Robots is too Expensive</h5>
+            <a href="javascript:void(0);" class="icon" onclick="showNavigation()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">OUR PRODUCTS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <div id="contactpage">
+    	<h2>Contact Us</h2>
+    	<form id="contactform"
+    		  action="index.html"
+    		  method="post">
+    		  	<fieldset>
+    		  		<ul>
+    		  			<li>
+	    		  			<label for="name">Full Name</label>
+			    		  	<input type="text" name="name" id="name" />
+			    		  	<p class="error" id="name_error">* Required Field</p>    		  				
+    		  			</li>
+    		  			<li>
+			    		  	<label for="phone">Phone Number (10 Digits)</label>
+			    		  	<input type="tel" name="phone" id="phone" />
+			    		  	<p class="error" id="phone_error">* Required Field (10 Digits)</p>	      		  				
+    		  			</li>
+    		  			<li>
+		    		  		<label for="email">Email</label>
+		    		  		<input type="text" name="email" id="email" />
+			    		  	<p class="error" id="email_error">* Required Field</p> 
+			    		  	<p class="error" id="emailFormat_error">* Invalid Email Address</p>    		  				
+    		  			</li>
+    		  			<li>
+		    		  		<label for="comments">Any Comments?</label>
+		    		  		<textarea type="text" name="comments" id="comments"></textarea>	  				
+    		  			</li>
+	    		  	</ul>
+	    		  	<p class="center">
+	    		  		<button type="submit" id="submit">Submit</button>
+						<button type="reset" id="reset">Reset</button>	    		  		
+	    		  	</p>
+	
+    		  	</fieldset>
+    	</form>
+    </div>
+    <footer>
+        <h1>ROBO<br>GOGO</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+    <script>
+    function showNavigation(){
+        let navigation = document.getElementById("navigation");
+
+        if(navigation.style.display == "block"){
+            navigation.style.display = "none";
+        }
+        else{
+            navigation.style.display = "block";
+        }
+    }
+    </script>
+</body>
+</html>

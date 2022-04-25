@@ -1,0 +1,90 @@
+<!-------f----------
+
+    Project 3
+    Name: Gabby Tan
+    Date: 2022-04-24
+    Description: A products page for Project 3.
+
+------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ROBO GOGO | Products</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+        <div id="mainheader">
+            <h2>ROBO<br>GOGO</h2>
+            <h5>Because Building Real Robots is too Expensive</h5>
+            <a href="javascript:void(0);" class="icon" onclick="showNavigation()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">OUR PRODUCTS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <div id="mainpage">
+    	<article id="products">
+    		<h2>Our Products</h2>
+    		<ul>
+    			<li>
+                    <!--Image from: https://www.flickr.com/photos/deathhell/8460785630-->
+                    <img src="images/unicorn.jpg" alt="Unicorn Gundam" />
+                    <span class="modelname">1/60 PG RX-0 Unicorn Gundam (10% OFF)<br></span>
+                    <span class="fullprice">$15.99</span>
+                    <span class="lowprice">$9.39<br></span>
+                    <span class="description">A Perfect Grade kit of the mech appearing in the novel <i>Mobile Suit Gundam Unicorn!</i> This model kit can shift into two modes, Unicorn Mode and Destroy Mode! This stylish mech will surely amaze those who see it!</span>
+                </li>
+    			<li>
+                    <!--Image from: https://www.flickr.com/photos/deathhell/51285181960-->
+                    <img src="images/barbatos.jpg" alt="Barbatos Lupus Rex" />
+                    <span class="modelname">1/144 HG Gundam Barbatos Lupus Rex (20% OFF)<br></span>
+                    <span class="fullprice">$10.99</span>
+                    <span class="lowprice">$8.79<br></span>
+                    <span class="description">A High Grade kit of the main mech featured in the anime <i>Mobile Suit Gundam IRON-BLOODED ORPHANS!</i> This kit's visuals and accessories is sure to make your collection shine!</span>
+                </li>
+                <li>
+                    <!--Image from: https://www.flickr.com/photos/deathhell/51051238993-->
+                    <img src="images/zaku.jpg" alt="MS-06S Zaku II" />
+                    <span class="modelname">1/144 RG MS-06S Zaku II (15% OFF)<br></span>
+                    <span class="fullprice">$13.59</span>
+                    <span class="lowprice">$11.55<br></span>
+                    <span class="description">A Real Grade kit of the mech featured in the manga <i>Mobile Suit Gundam: The Origin!</i> This kit comes with three accessories, giving a variety of choices to pose this kit! This kit is definitely worthwhile for you to get!</span>
+                </li>                
+    		</ul>
+    	</article>
+    	
+    </div>
+    <footer>
+        <h1>ROBO<br>GOGO</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+    <script>
+    function showNavigation(){
+        let navigation = document.getElementById("navigation");
+
+        if(navigation.style.display == "block"){
+            navigation.style.display = "none";
+        }
+        else{
+            navigation.style.display = "block";
+        }
+    }
+    </script>
+</body>
+</html>
